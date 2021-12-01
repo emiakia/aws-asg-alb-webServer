@@ -43,8 +43,12 @@ The project automates the deployment of a scalable and secure web application in
 ## Requirements
 
 - **Terraform**: v1.0.0 or higher
+<<<<<<< HEAD
 - **AWS CLI**: Configured with appropriate credentials.
 >>>>>>> 325f437 (EC2 ALB Modullar)
+=======
+- **AWS CLI**: Configured with appropriate credentials
+>>>>>>> 967c085 (EC2 ALB Modullar)
 
 ## Usage
 
