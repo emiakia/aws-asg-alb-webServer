@@ -85,6 +85,7 @@ module "web_tg" {
   lbtg_tags = var.lbtg_tags
 }
 
+
 # Listener for the ALB
 module "web_listener" {
   source                  = "./modules/lb_listener"
