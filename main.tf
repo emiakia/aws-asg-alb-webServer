@@ -96,3 +96,4 @@ module "web_listener" {
   lblst_default_action_type             = var.lblst_default_action_type
   lblst_default_action_target_group_arn = module.web_tg.tg_arn
 }
+
