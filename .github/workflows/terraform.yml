@@ -9,9 +9,9 @@ name: Terraform
 #       - main
 on:
   release:
-    types: [edited]
+    # types: [edited]
     # types: [created]
-    # types: [published]
+    types: [published]
 
 jobs:
   terraform:
