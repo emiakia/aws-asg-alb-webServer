@@ -10,8 +10,8 @@ name: Terraform
 on:
   release:
     # types: [edited]
-    # types: [created]
-    types: [published]
+    types: [created]
+    # types: [published]
 
 jobs:
   terraform:
