@@ -1,8 +1,15 @@
 name: Terraform
 
 on:
-  release:
-    types: [created, published, edited, deleted]
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+# on:
+#   release:
+#     types: [created, published, edited, deleted]
 
 jobs:
   terraform:
