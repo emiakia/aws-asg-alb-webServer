@@ -2,7 +2,7 @@ name: Terraform
 
 on:
   release:
-    types: [created, published, edited]
+    types: [created, published, edited, deleted]
 
 jobs:
   terraform:
