@@ -27,7 +27,7 @@ module "ec2_security_group" {
   sg_tags          = var.ec2_sg_tags
 }
 
-# # Launch Template
+# Launch Template
 module "web_server_lt" {
   source              = "./modules/launch_template"
   wslt_name_prefix    = var.wslt_name_prefix
@@ -38,7 +38,6 @@ module "web_server_lt" {
   wslt_security_group = [module.ec2_security_group.id]
   wslt_tags           = var.wslt_tags
 }
-
 
 # Auto Scaling Group
 module "web_asg" {
@@ -67,7 +66,6 @@ module "alb" {
   alb_tags                       = var.alb_tags
 }
 
-
 # Target Group for the ALB
 module "web_tg" {
   source        = "./modules/lb_target_group"
@@ -86,7 +84,6 @@ module "web_tg" {
 
   lbtg_tags = var.lbtg_tags
 }
-
 
 # Listener for the ALB
 module "web_listener" {
